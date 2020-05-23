@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "Michael Scott",
+      "occupation": "Manager",
+      "department": "Corporate",
+      "location": "Boulder, Colorado"
+    },
+    {
+      "id": 2,
+      "name": "Jim Halpert",
+      "occupation": "Salesman",
+      "department": "Sales",
+      "location": "Stamford, Connecticut"
+    },
+    {
+      "id": 3,
+      "name": "Pam Beesly",
+      "occupation": "Receptionist",
+      "department": "Administrative",
+      "location": "Scranton, Pennsylvania"
+    },
+    {
+        "id": 4,
+        "name": "Dwight Schrute",
+        "occupation": "Salesman",
+        "department": "Sales",
+        "location": "Scranton, Pennsylvania"
+    },
+    {
+        "id": 5,
+        "name": "Kevin Malone",
+        "occupation": "Accountant",
+        "department": "Accounting",
+        "location": "Scranton, Pennsylvania"
+    },
+    {
+        "id": 6,
+        "name": "Toby Flenderson",
+        "occupation": "HR Representative",
+        "department": "Corporate",
+        "location": "Scranton, Pennsylvania"
+    },
+    {
+        "id": 7,
+        "name": "Oscar Martinez",
+        "occupation": "Accountant",
+        "department": "Accounting",
+        "location": "Scranton, Pennsylvania"
+    },
+    {
+        "id": 8,
+        "name": "Angela Martin",
+        "occupation": "Accountant",
+        "department": "Accounting",
+        "location": "Scranton, Pennsylvania"
+    }
+  ]
+  
