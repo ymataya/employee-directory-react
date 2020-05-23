@@ -10,7 +10,8 @@ class App extends React.Component {
     name: ["Accounting", "Sales", "Administrative", "Corporate"],
     activeDepartment: "Select",
     employees: employees,
-    sort: 'ascending'
+    sortOrder: "ascending",
+    sorted: false
   }
 
   search = () => {
@@ -30,31 +31,38 @@ class App extends React.Component {
   }
 
   handleChange = (e) => {
-    console.log(e.target)
-    console.log(e.value)
+    // console.log(e.target)
+    // console.log(e.value)
 
     this.setState({
       activeDepartment: e.target.value
     })
   }
 
-  render() {
-    const sorted = this.state.employees.sort ( (a, b) => {
-      const isReversed = (this.state.sort === "ascending") ? 1 : -1;
+  handleSorting = () => {
+    // We always use the setState method to update a component's state
+    this.setState({ sorted: true });
+    if (this.state.sorted === true) {
+      const sorted = this.state.employees.sort ( (a, b) => {
+      const isReversed = (this.state.sortOrder === "ascending") ? 1 : -1;
       return isReversed * a.name.localeCompare(b.name)
-    })
-    
+       })
+    }
+  };
+
+  render() {
     return (
       <div className="App">
         <Nav />
+        <div className="container">
         <Button 
         department={this.state.name}
         search={this.search}
         selectDept={this.select}
         handleChange = {this.handleChange}
         activeDepartment = {this.state.activeDepartment}
+        sortedNames = {this.handleSorting}
         />
-        <div className="container">
           <div className="row">
             {this.state.employees.map(employee => (
               <Card

@@ -17,10 +17,11 @@ function Button(props) {
                         
                     </select>
                     <div className="input-group-append">
-                         <button type="button" className="btn btn-dark" onClick={props.search}>Search by Department</button>
+                         <button type="button" className="btn search-btn" onClick={props.search}>Search</button>
                     </div>
                 </div>
             </form>
+            <p className="sort"><button type="button" className="btn sort-btn" onClick={props.sortedNames}>Sort A-Z</button></p>
         </div>
     );
 }
