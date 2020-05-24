@@ -40,7 +40,6 @@ class App extends React.Component {
   }
 
   handleSorting = () => {
-    // We always use the setState method to update a component's state
     this.setState({ sorted: true });
     if (this.state.sorted === true) {
       const sorted = this.state.employees.sort ( (a, b) => {
